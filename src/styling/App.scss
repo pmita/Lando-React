@@ -1,0 +1,17 @@
+//Defining our mixins
+@mixin flex($direction, $justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+//Importing our css parcels
+@import './abstract/variables';
+@import './base/global';
+
+//Defining the styles for our main react page
+.App {
+    min-height: 100vh;
+    width: 100%;
+}
